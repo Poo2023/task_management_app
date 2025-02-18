@@ -42,7 +42,7 @@ Install **PostgreSQL**
 ### **1. Clone the Repository**
 ```bash
 git clone https://github.com/Poo2023/task-management-app.git
-cd task-management-app/backend
+cd task-management-app
 ```
 
 ### **2. Install Dependencies**
@@ -51,7 +51,7 @@ npm install
 ```
 
 ### **3. Set Up Environment Variables**
-Create a **`.env`** file inside the `backend/` folder and add the following:
+Create a **`.env`** file and add the following:
 ```env
 PORT=5000
 DATABASE_URL=postgresql://admin:password@localhost:5432/taskdb
