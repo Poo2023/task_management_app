@@ -101,7 +101,7 @@ The frontend will be available at **`http://localhost:3000`**.
 1. **Register a new user** via the **Signup** page.
 2. **Log in** and store the **JWT token**.
 3. **Add new tasks** via the task input form.
-4. **Mark tasks as completed** → They should be moved to the bottom.
+4. **Mark tasks as completed** → They should be moved to the Completed tasks section.
 5. **Edit a task** → Title and description should update without resetting completion status.
 6. **Delete a task** → Task should be removed from UI and database.
 7. **Check API Requests** using **Postman** or **Browser DevTools**.
