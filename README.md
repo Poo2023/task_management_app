@@ -65,6 +65,13 @@ npm run dev
 ```
 The backend will run at **`http://localhost:5000`**.
 
+### **5. Run Database migrations**
+```bash
+npx prisma migrate dev --name init
+```
+
+
+
 ---
 
 ## **Frontend Setup**
