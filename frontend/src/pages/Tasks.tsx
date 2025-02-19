@@ -118,8 +118,8 @@ const Tasks = () => {
     };
 
     const handleLogout = () => {
-        localStorage.removeItem("token"); // ✅ Remove JWT token
-        navigate("/"); // ✅ Redirect to login page
+        localStorage.removeItem("token"); 
+        navigate("/"); 
     };
     
     
