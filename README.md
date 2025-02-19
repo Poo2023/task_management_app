@@ -59,12 +59,7 @@ JWT_SECRET=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ0ZXN0
 ```
 **Modify `DATABASE_URL` based on your PostgreSQL setup.**
 
-### **4. Run Database Migrations**
-```bash
-npx prisma migrate dev --name init
-```
-
-### **5. Start the Backend Server**
+### **4. Start the Backend Server**
 ```bash
 npm run dev
 ```
