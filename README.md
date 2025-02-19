@@ -11,7 +11,7 @@ Users can **register, log in, and manage tasks** with features like **adding, ed
 **Task Management:** Create, update, mark as completed, and delete tasks.  
 **Persistent Storage:** Tasks are stored in a **PostgreSQL database**.  
 **Task Organization: Tasks are separated into "To-Do" and "Completed" sections**. 
-**Protected Routes:** Only **authenticated users** can manage tasks**.
+**Protected Routes:** Only **authenticated users** can manage tasks.
 
 ---
 
