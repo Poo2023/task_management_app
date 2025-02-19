@@ -55,7 +55,7 @@ Create a **`.env`** file and add the following:
 ```env
 PORT=5000
 DATABASE_URL=postgresql://admin:password@localhost:5432/taskdb
-JWT_SECRET=your_secret_key
+JWT_SECRET=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ0ZXN0dXNlciIsImlhdCI6MTczOTkyMzE5MiwiZXhwIjoxNzM5OTI2NzkyfQ.ARAFf3nu7MsJvaRHmGkTX6eOew7-F2_OAyoSZhiI378
 ```
 **Modify `DATABASE_URL` based on your PostgreSQL setup.**
 
