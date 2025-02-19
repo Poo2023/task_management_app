@@ -9,6 +9,7 @@ Watch the demo video: [https://drive.google.com/file/d/1oU3BdFvvJOmmdsi8X1AA9EQA
 4.  **Editing a task**
 5.  **Marking a task as completed**
 6.  **Undo task marked as completed**
-7.  **Deleting a task**  
+7.  **Deleting a task**
+8.  **Logging out**
 
  **Thank you for watching the demo!**
