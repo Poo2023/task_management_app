@@ -2,7 +2,6 @@ const express = require("express");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const pool = require("../models/db");
-
 const router = express.Router();
 
 // Register user
@@ -21,7 +20,7 @@ router.post("/register", async (req, res) => {
 // Login user
 router.post("/login", async (req, res) => {
     const { username, password } = req.body;
-    const result = await pool.query("SELECT * FROM users WHERE username = $1", [username]);
+    const result = await pool.query("SELECT * FROM users WHERE username=$1", [username]);
 
     if (result.rows.length === 0) {
         return res.status(401).json({ message: "Invalid credentials" });

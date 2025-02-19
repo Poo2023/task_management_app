@@ -16,13 +16,13 @@ function authenticateToken(req, res, next) {
     });
 }
 
-// Get all tasks for logged-in user
+// Getting all tasks for logged-in user
 router.get("/", authenticateToken, async (req, res) => {
     const tasks = await pool.query("SELECT * FROM tasks WHERE userId = $1", [req.user.id]);
     res.json(tasks.rows);
 });
 
-// Create a new task
+// Create new task
 router.post("/", authenticateToken, async (req, res) => {
     const { title, description } = req.body;
     const newTask = await pool.query(
@@ -32,12 +32,11 @@ router.post("/", authenticateToken, async (req, res) => {
     res.status(201).json(newTask.rows[0]); // Return the full task object
 });
 
-// Update a task 
+// Update task 
 router.put("/:id", authenticateToken, async (req, res) => {
     const { title, description, isComplete } = req.body;
 
     try {
-        // Preserve isComplete when updating only title/description
         if (title !== undefined || description !== undefined) {
             await pool.query(
                 "UPDATE tasks SET title = $1, description = $2 WHERE id = $3 AND userid = $4",
